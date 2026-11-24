@@ -1,0 +1,4 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteRule ^$ public/index.php [L]
+RewriteRule ^api/(.*)$ public/api.php?path=$1 [L,QSA]
